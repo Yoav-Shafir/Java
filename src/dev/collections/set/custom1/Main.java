@@ -42,7 +42,7 @@ class Employee {
     @Override
     // helps in finding bucket’s index on which data will be stored.
     public int hashCode() {
-    	return id.hashCode() + name.hashCode();      
+    	return id.hashCode() + name.hashCode();
     }
 }
 
