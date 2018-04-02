@@ -11,16 +11,16 @@ import java.util.Map;
 
 class Employee {
 	private String id;
-    private String name;
+	private String name;
     
     public Employee(String id, String name) {
     	this.id = id;
-        this.name = name;
-	}
+    	this.name = name;
+    }
     
     @Override
     public String toString() {
-           return "Employee[id=" + id + ", name=" + name + "] ";
+    	return "Employee[id=" + id + ", name=" + name + "] ";
     }
     
     @Override
@@ -36,13 +36,13 @@ class Employee {
     	
     	Employee e = (Employee) o;
     	
-    	return e.id.equals(this.id) && e.name.equals(this.name);  
+    	return e.id.equals(this.id) && e.name.equals(this.name);
     }
     
     @Override
     // helps in finding bucket’s index on which data will be stored.
-    public int hashCode(){
-       return id.hashCode() + name.hashCode();      
+    public int hashCode() {
+    	return id.hashCode() + name.hashCode();      
     }
 }
 
@@ -51,7 +51,7 @@ class Employee {
 class HashSetCustom<E> {
 	
 	private Map<E, Object> map;
-	
+
 	public HashSetCustom() {
 		map = new HashMap<>();
 	}
@@ -59,14 +59,14 @@ class HashSetCustom<E> {
 	// add objects in SetCustom.
 	public void add(E value){
 		E key = value;
-        map.put(key, null);    
+		map.put(key, null);
 	}
 	
-	public boolean contains(E value){
+	public boolean contains(E value) {
 		E key = value;
 		return map.containsKey(key);
 	}
-	 
+	
 	public void remove(E value){
 		E key = value;
 		map.remove(key);
