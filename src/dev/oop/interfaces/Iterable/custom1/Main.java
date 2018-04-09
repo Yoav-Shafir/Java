@@ -1,4 +1,4 @@
-package dev.oop.interfaces.iterator.custom1;
+package dev.oop.interfaces.Iterable.custom1;
 
 import java.util.ArrayList;
 import java.util.Iterator;
